@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 101 Template</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script>
+  $(function(){
+	/*$.post('http://localhost/blog/rest_posts.json',{title:'Mi Post jquery123',body:'Testea el Post jquery'},function(data){
+       alert(JSO.stringify(data.message));		
+	});*/
+	
+	$.get('http://localhost/blog/rest_posts.json',function(data){
+	   alert(JSO.stringify(data.message));
+	});
+  });
+
+</script>
+</head>
+<body>
+   <div class="result"></div>  
+</body>
+</html>
